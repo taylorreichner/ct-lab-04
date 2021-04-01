@@ -57,7 +57,31 @@ describe('routes', () => {
 
   })  
   
+  it('finds order by id and updates the title', () => {
+      return request(app)
+        .put('/api/v1/recipes/1')
+        .send({title: 'super cool bacon'})
+        .then((res) => {
+          expect(res.body).toEqual({
+            id: '1',
+            title: 'super cool bacon',
+            ingredients: 'bacon stuff',
+            thumbnail: "fsdas"
+          })
+        })
+     })
   
-  
+  it('deletes item by id', () => {
+    return request(app)
+      .delete('/api/v1/recipes/1')
+      .then((res) => {
+        expect(res.body).toEqual({
+          id: '1',
+          title: 'bacon',
+          ingredients: 'bacon stuff',
+          thumbnail: "fsdas"
+        })
+      })
+  })   
   
 });
