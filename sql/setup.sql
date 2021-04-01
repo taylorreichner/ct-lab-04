@@ -4,5 +4,6 @@ CREATE TABLE recipes (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     title VARCHAR(512) NOT NULL,
     ingredients VARCHAR(512) NOT NULL,
-    thumbnail VARCHAR(512) NOT NULL,
+    thumbnail VARCHAR(512) NOT NULL
 );
+

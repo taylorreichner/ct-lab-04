@@ -33,6 +33,7 @@
     "express": "^4.17.1",
     "install": "^0.13.0",
     "pg": "^8.5.1",
-    "superagent": "^6.1.0"
+    "superagent": "^6.1.0",
+    "twilio": "^3.59.0"
   }
 }
