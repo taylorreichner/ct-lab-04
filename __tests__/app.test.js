@@ -30,7 +30,7 @@ describe('routes', () => {
         .send({ 
           title: 'bacon',
           ingredients: 'bacon stuff',
-          thumbnail: "fsdas"
+          
       
       })
         .then((res) => {
@@ -39,7 +39,7 @@ describe('routes', () => {
           id: '2',
           title: 'bacon',
           ingredients: 'bacon stuff',
-          thumbnail: "fsdas"
+          thumbnail: null,
           })
       })
     })
@@ -51,7 +51,7 @@ describe('routes', () => {
           id: '1',
           title: 'bacon',
           ingredients: 'bacon stuff',
-          thumbnail: "fsdas"
+          thumbnail: null,
         })
       })
 
@@ -66,7 +66,7 @@ describe('routes', () => {
             id: '1',
             title: 'super cool bacon',
             ingredients: 'bacon stuff',
-            thumbnail: "fsdas"
+            thumbnail: null
           })
         })
      })
@@ -79,7 +79,7 @@ describe('routes', () => {
           id: '1',
           title: 'bacon',
           ingredients: 'bacon stuff',
-          thumbnail: "fsdas"
+          thumbnail: null
         })
       })
   })   
